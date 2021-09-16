@@ -8,3 +8,6 @@ MICHAEL ALEJANDRO MUÑOZ ARIAS
 Soy estudiante de ingenieria de Sistemas de la UPTC de Tunja Boyacá, siempre me ha gustado el tema de la 
 programación y me apasiona resolver problemas con el uso de modelos y algoritmos. 
 
+BRYAN CAMILO VACA ALBA
+Soy estudiante de ingeniería Civil de la UN, resido en Chía, Cundinamarca. Los conocimientos básicos en 
+programación con los que actualmente cuento los he adquirido Enel programa MisiónTIC 2022.
