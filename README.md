@@ -9,4 +9,7 @@
 ## Equipo: 5CDs (Five Code Developers)
 
 * Analista: Bryan Camilo Vaca
-> Añadir nombre y rol
+* Scrum Master: Michael Muñoz
+* Administrador de la base de datos: Gonzalo Amezquita
+* Product Owner: Brayan Chavarro
+* Developer: Ervin Cardenas
