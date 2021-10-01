@@ -1,34 +1,60 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-    <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="../css/style.css" type="text/css" >
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Gestion de usuario</title>
-    </head>
-    <body>    
-        <a href="./new-user.html">
-            <button class="form-button" style="float: right; margin-right: 15%;">Crear usuario</button>
-        </a>      
-    <div>
-         <table class="table-list">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" >
 
-            <tr> 
-              <th>ID</th>
-              <th>NOMBRES</th>
-              <th>ROL</th>
-              <th>ESTADO</th>
-          
-            </tr>
-          
-            <tr>
-              <td>1001</td>
-              <td>Flor Rodriguez</td>
-              <td>Vendedor</td>
-              <td>PENDIENTE</td>
-            </tr>
-        </table>
-    </div>
-        
-    </body>
+    <title>Gestion de usuario</title>
+  </head>
+  <body>
+          <a href="./new-user.html">
+              <button class="form-button" style="float: right; margin-right: 15%;">Crear usuario</button>
+          </a> 
+
+    <table class="table table-striped table-dark" style="margin-right: auto;">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NOMBRES</th>
+            <th scope="col">ROL</th>
+            <th scope="col">ESTADO</th>
+            <th scope="col">ACCIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1001</th>
+            <td>Flor Rodriguez</td>
+            <td>Vendedor</td>
+            <td>PENDIENTE</td>
+            <td>
+                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">1001</th>
+            <td>Ana Rojas</td>
+            <td>Admin</td>
+            <td>PENDIENTE</td>
+            <td>
+                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+            <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
