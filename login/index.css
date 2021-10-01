@@ -101,3 +101,7 @@ nav {
 .radio {
     color: var(--letraSecundaria);
 }
+
+a {
+    color: var(--letraSecundaria);
+}
