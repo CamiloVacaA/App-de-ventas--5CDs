@@ -27,9 +27,22 @@ h2 {
     color: var(--contraste);
 }
 
+table,
+td {
+    border: 1px solid rgb(214, 205, 205);
+    color:rgb(214, 205, 205)
+   }
+
+th,
+tfoot {
+    background-color: rgb(212, 216, 224);
+    color: rgb(12, 12, 12);
+    }
+
+
 .form-container{
     background-color: var(--secundario);
-    width:500px;
+    width:600px;
     max-width: 60%;
     border: 1px solid var(--letraPrincipal);
     margin: 0 auto;
