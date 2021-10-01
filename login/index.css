@@ -98,3 +98,6 @@ nav {
     border: 0px;
 }
 
+.radio {
+    color: var(--letraSecundaria);
+}
