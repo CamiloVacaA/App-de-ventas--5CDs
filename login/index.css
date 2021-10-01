@@ -29,16 +29,38 @@ h2 {
 
 table,
 td {
-    border: 1px solid rgb(214, 205, 205);
-    color:rgb(214, 205, 205)
+    border: 1px solid rgb(114, 113, 113);
+    color:rgb(231, 223, 223)
    }
 
 th,
 tfoot {
-    background-color: rgb(212, 216, 224);
-    color: rgb(12, 12, 12);
+    background-color: rgb(114, 116, 119);
+    color: rgb(240, 230, 230);
     }
 
+nav {
+    border-bottom: 1px solid rgb(107, 106, 106);
+    color:rgb(107, 106, 106)
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: rgb(209, 198, 198);
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
 
 .form-container{
     background-color: var(--secundario);
