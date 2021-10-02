@@ -23,55 +23,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-h1 {
-    color: var(--contraste);
-    font-size: x-large ;
-}
-
 h2 {
     color: var(--contraste);
 }
 
-table,
-td {
-    border: 1px solid rgb(114, 113, 113);
-    color:rgb(231, 223, 223)
-   }
-
-th,
-tfoot {
-    background-color: rgb(114, 116, 119);
-    color: rgb(240, 230, 230);
-    }
-
-nav {
-    border-bottom: 1px solid rgb(107, 106, 106);
-    color:rgb(107, 106, 106)
-}
-
-.crumbs ol {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.crumb {
-    display: inline-block;
-}
-
-.crumb a::after {
-    display: inline-block;
-    color: rgb(209, 198, 198);
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
-}
-
 .form-container{
     background-color: var(--secundario);
-    width:700px;
-    max-width: 70%;
+    width:500px;
+    max-width: 60%;
     border: 1px solid var(--letraPrincipal);
     margin: 0 auto;
     margin-top: 100px;
@@ -102,43 +61,20 @@ nav {
     margin: 40px 0px 10px 0px;
     border-radius: 10px;
     border: 0px;
-}
-.baner{
-background: solid red;
-
+    cursor: pointer;
 }
 
-.radio {
-    color: var(--letraSecundaria);
-}
+.table {
+    margin: auto;
+    width: 80% !important; 
+ }
 
-a {
-    color: var(--letraSecundaria);
-}
-
-.home {
-    display: block;
-    height: 600px;
-    background-image:url("Moto.jpg") ;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-}
-
-.form-container-home{
-    background-color: var(--secundario);
-    width: 200px;
-    height: 300px;
-    max-width: 60%;
-    border: 1px solid var(--letraPrincipal);
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 75%;
+.form-select{
+    background-color: var(--principal);
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+    border: 0px solid;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding: 30px 30px;
-    flex-direction: column;
 }
