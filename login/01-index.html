@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,8 +9,8 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" type="text/css">
-    <title>Registro de Productos</title>
 
+    <title>Administrador</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
                             Productos
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item active" href="3.2-registroProductos.html">Registro Productos</a>
+                            <li><a class="dropdown-item" href="3.2-registroProductos.html">Registro Productos</a>
                             </li>
                             <li><a class="dropdown-item" href="3.1-busquedaProductos.html">Consultar Producto</a></li>
                             <li><a class="dropdown-item" href="#">Editar y/o eliminar Producto</a></li>
@@ -91,7 +91,7 @@
                     <button class="btn btn-outline-danger" type="submit">Search</button>
                 </form>
             </div>
-            <br>
+            ><br>
             <a class="navbar-brand" style="color:#c33;" href="#">Administrador</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -100,32 +100,9 @@
             </button>
         </div>
     </nav>
-    <form class="form-container">
-        <h2>Registra tu producto</h2>
 
-        <p>ID del producto</p>
-        <input class="form-input" id="IDProducto" name="IDProducto">
 
-        <p>Nombre del producto</p>
-        <input class="form-input" id="NombreProducto" name="NombreProducto">
 
-        <p>Descripción &nbsp;</p>
-        <input class="form-input" id="Descripcion" name="Descripcion">
-
-        <p>Valor Unitario &nbsp;</p>
-        <input class="form-input" id="Valor" name="Valor"> &nbsp;COP
-
-        <p>Estado:</p>
-        <div></div>
-        <input type="radio" id="Disponible" name="drone" value="Disponible">
-        <label for="Disponible">Disponible</label>
-
-        <input type="radio" id="NoDisponible" name="drone" value="NoDisponible">
-        <label for="NoDisponible">No Disponible</label>
-        </div>
-
-        <button class="form-button">Registrar </button>
-    </form>
 
 </body>
 
