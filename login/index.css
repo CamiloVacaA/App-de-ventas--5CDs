@@ -23,6 +23,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+    color: var(--contraste);
+    font-size: x-large ;
+}
+
 h2 {
     color: var(--contraste);
 }
@@ -104,4 +110,31 @@ nav {
 
 a {
     color: var(--letraSecundaria);
+}
+
+.home {
+    display: block;
+    height: 600px;
+    background-image:url("Moto.jpg") ;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.form-container-home{
+    background-color: var(--secundario);
+    width: 200px;
+    height: 300px;
+    max-width: 60%;
+    border: 1px solid var(--letraPrincipal);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    flex-direction: column;
 }
