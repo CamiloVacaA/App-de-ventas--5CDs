@@ -1,0 +1,32 @@
+.form-container{
+    width:500px;
+    max-width: 60%;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.form-container h2 {
+    margin: 0px 10px; 
+}
+.form-input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+    border: 0px solid;
+    border-radius: 10px;
+}
+.form-button{
+    padding:12px;
+    margin: 40px 0px 10px 0px;
+    max-width:80%;
+    border-radius: 10px;
+    border: 0px;
+    color: #fff;
+}
