@@ -1,4 +1,4 @@
-import  Mongoose from "mongoose";
+/*import  Mongoose from "mongoose";
 
 
 const userSchema = new Mongoose.Schema({
@@ -17,3 +17,4 @@ const userSchema = new Mongoose.Schema({
 }); 
 
 export default Mongoose.model("user", userSchema);
+*/ 

@@ -1,11 +1,8 @@
-import user from "../models/User";
-import rol from "../models/rol";
-import { ROLES } from "../models/rol";
 
-export const crearUsuario = async (res, req) => {
-
+async function crearUsuario (res, req) {
+    /*
     const { username, correo, rol} = req.body;
-    const rol_encontrado = await.findOne();
+    const rol_encontrado = await.findOne();*/
 }
 
 
@@ -17,4 +14,4 @@ function searchUser(req, res){
 
 }
 
-module.exports = {getAllUsers, saveUser, searchUser}
+module.exports = {getAllUsers, crearUsuario, searchUser}

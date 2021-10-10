@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-export const ROLES = ["VENDEDOR", "ADMIN"];
+/*export const ROLES = ["VENDEDOR", "ADMIN"];
 
 const rolSch = mongoose.Schema(
   { x: String},
@@ -8,3 +8,4 @@ const rolSch = mongoose.Schema(
 );
 
 export default mongoose.model('rol', rolSch)
+*/
