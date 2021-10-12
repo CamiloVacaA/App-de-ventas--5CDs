@@ -12,7 +12,7 @@ app.set('port', port)
 
 app.use(express.json())
 
-app.use('/usuario', user_router)
+app.use('/usuario', user_router)     
 app.use('/product', product_router)
 app.use('/venta', venta_router)
 app.use('/detalleventa', detalleventa_router)

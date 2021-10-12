@@ -1,4 +1,4 @@
-const detalleVenta = require('../models/detalle_venta')
+const detalle_venta = require('../models/detalle_venta')
 
 async function saveDetalleVenta(req, res) {
     const { num_detalle, num_venta, id_product, cantidad, precio} = req.body
@@ -12,17 +12,17 @@ async function saveDetalleVenta(req, res) {
         precio,
     }) 
     let detalle = await newDetalleVenta.save()
-    res.status(200).json(detalle)
+    res.status(201).json(detalle)
 }
 
 async function getAll(req, res){
     let result = await detalle_venta.find();
-    res.status(200).json(result)
+    res.status(201).json(result)
 }
 
 async function search(req, res){
     let result = await detalle_venta.find(req.query)
-    res.status(200).json(result)
+    res.status(201).json(result)
 }
 
 module.exports = {
