@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const saleSchema = mongoose.Schema({
+const ventaSchema = mongoose.Schema({
     num_venta: String,
     id_usuario: String,
     fecha: Date,
