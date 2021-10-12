@@ -3,15 +3,16 @@ const mongoose = require('mongoose')
 const productSchema = mongoose.Schema({
     nombre: String,
     descripcion: String,
-    valor_unitario: Number,
+    precio: Number,
     estado: {
         type: String,
         enum : ['DISPONIBLE','NO_DISPONIBLE'],
         default: 'DISPONIBLE'
     }
-},
-{
-  versionKey: false
-}); 
+  },
+  {
+    versionKey: false
+  }
+); 
 
-module.exports = mongoose.model("Product", productSchema);
+module.exports = mongoose.model("Producto", productSchema);

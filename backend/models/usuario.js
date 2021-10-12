@@ -1,13 +1,7 @@
-/*import  Mongoose from "mongoose";
+const mongoose = require('mongoose')
 
-
-const userSchema = new Mongoose.Schema({
-        id_usuario: {
-        type: String,
-        unique: true,
-        required: true
-    },
-    nombre_usuario: {
+const userSchema = mongoose.Schema({        
+    nombre: {
         type: String,
         unique: true,
         required: true
@@ -17,9 +11,16 @@ const userSchema = new Mongoose.Schema({
         unique: true,
         required: true
     },
-    rol: String,
-    estado: String
+    rol:  {
+        type: String,
+        enum : ['ADMIN','VENDEDOR'],
+        default: 'VENDEDOR'
+    },
+    estado:  {
+        type: String,
+        enum : ['PENDIENTE','AUTORIZADO', 'NO_AUTORIZADO'],
+        default: 'PENDIENTE'
+    }
 }); 
 
-export default Mongoose.model("user", userSchema);
-*/ 
+module.exports = mongoose.model("Usuario", userSchema);

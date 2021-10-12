@@ -1,9 +1,13 @@
 const mongoose = require('mongoose')
 
 const ventaSchema = mongoose.Schema({
-    num_venta: String,
-    id_usuario: String,
+    vendedor: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Usuario",
+      require: true
+    },
     fecha: Date,
+    total: Number
 },
 {
   versionKey: false

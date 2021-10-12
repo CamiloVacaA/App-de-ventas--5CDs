@@ -14,12 +14,12 @@ async function saveVenta(req, res) {
 
 async function getAll(req, res){
     let result = await venta.find();
-    res.status(201).json(result)
+    res.status(200).json(result)
 }
 
 async function search(req, res){
     let result = await venta.find(req.query)
-    res.status(201).json(result)
+    res.status(200).json(result)
 }
 
 module.exports = {

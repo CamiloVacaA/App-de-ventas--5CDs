@@ -1,17 +1,28 @@
 
-async function crearUsuario (res, req) {
-    /*
-    const { username, correo, rol} = req.body;
-    const rol_encontrado = await.findOne();*/
+const Usuario = require('../models/usuario')
+
+async function saveUser (res, req) {
+    
+    const { nombre, correo, rol } = req.body;
+
+    const newUser = new Usuario({
+        nombre,
+        correo,
+        rol
+    })
+
+    const user = await newUser.save()
+    res.status(201).json(user)
 }
 
-
-function getAllUsers(req, res) {
-    res.status(200).json({users:['Andres', 'Pedro']})
+async function getAllUsers(req, res) {
+    let result = await Usuario.find()
+    res.status(200).json(result)
 }
 
-function searchUser(req, res){
-
+async function searchUser(req, res){
+    let result = await Usuario.find(req.query)
+    res.status(200).json(result)
 }
 
-module.exports = {getAllUsers, crearUsuario, searchUser}
+module.exports = {getAllUsers, saveUser, searchUser}
