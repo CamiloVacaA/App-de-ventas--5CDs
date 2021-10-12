@@ -4,7 +4,7 @@ async function saveDetalleVenta(req, res) {
     const { num_detalle, num_venta, id_product, cantidad, precio} = req.body
    
     
-    const newDetalleVenta = new detalleVenta({
+    const newDetalleVenta = new detalle_venta({
         num_detalle,
         num_venta,
         id_product,
@@ -16,12 +16,12 @@ async function saveDetalleVenta(req, res) {
 }
 
 async function getAll(req, res){
-    let result = await detalleVenta.find();
+    let result = await detalle_venta.find();
     res.status(200).json(result)
 }
 
 async function search(req, res){
-    let result = await detalleVenta.find(req.query)
+    let result = await detalle_venta.find(req.query)
     res.status(200).json(result)
 }
 
