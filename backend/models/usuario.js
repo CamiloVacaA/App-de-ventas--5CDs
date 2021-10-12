@@ -2,6 +2,11 @@
 
 
 const userSchema = new Mongoose.Schema({
+        id_usuario: {
+        type: String,
+        unique: true,
+        required: true
+    },
     nombre_usuario: {
         type: String,
         unique: true,
